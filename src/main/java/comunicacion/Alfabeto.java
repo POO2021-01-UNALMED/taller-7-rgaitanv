@@ -24,7 +24,17 @@ public class Alfabeto extends Pictograma {
 	}
 	
 	public String toString() {
-			return "ppp";
+		String concatenar = "";
+
+		for(String letter: this.letras) {
+			if(letter.equals("Z")) {
+				concatenar += letter;
+			}else {
+				concatenar += letter + ", ";
+			}
+		}
+
+		return concatenar;
 	}
 
 
